@@ -1,0 +1,7 @@
+version: 2
+sources:
+    - name: stage
+      database: FIVETRAN_INTERVIEW_DB
+      schema: GOOGLE_SHEETS
+      tables:
+        - name: COVID_19_INDONESIA_KAMLESH_SHARMA
