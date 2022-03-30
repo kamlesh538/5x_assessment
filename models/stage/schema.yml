@@ -1,6 +1,6 @@
 version: 2
 models:
-    - name: daily_cases.sql
+    - name: daily_cases
       description: "This contains cases on each date and each location code."
       columns:
         - name: location_iso_code
@@ -9,7 +9,7 @@ models:
             - unique
             - not_null
     
-    - name: locations.sql
+    - name: locations
       description: "This contains the details for each location code."
       columns:
         - name: location_iso_code
