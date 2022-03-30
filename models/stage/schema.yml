@@ -1,0 +1,19 @@
+version: 2
+models:
+    - name: daily_cases
+      description: "This contains cases on each date and each location code."
+      columns:
+        - name: location_iso_code
+          description: "Primary key in this table"
+          tests:
+            - unique
+            - not_null
+    
+    - name: locations
+      description: "This contains the details for each location code."
+      columns:
+        - name: location_iso_code
+          description: "Primary key in this table"
+          tests:
+            - unique
+            - not_null
